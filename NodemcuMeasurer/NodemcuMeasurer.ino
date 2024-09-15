@@ -435,7 +435,7 @@ void measure() {
     humi = readHumedad();
 
     // Se chequea si los valores son correctos
-    if (checkMeasures(temp, humi)) {
+    if (checkMeasures(temp, humi,ldrValue)) {
       // Se envían los datos
       sendSensorData(temp, humi,ldrValue); 
     }
